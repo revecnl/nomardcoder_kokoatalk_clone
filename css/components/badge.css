@@ -1,0 +1,12 @@
+.bedge{
+    background-color: tomato;
+    color:#fff9c4;
+    font-weight: 600;
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

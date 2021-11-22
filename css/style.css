@@ -1,0 +1,26 @@
+/*파일순서 지킬것*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css";
+@import "variable.css";
+
+/*components*/
+@import "components/status_bar.css";
+@import "components/nav-bar.css";
+@import "components/screen_header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-raw.css";
+/*screen*/
+@import "screen/login.css";
+@import "screen/friends.css";
+@import "screen/search.css";
+@import "screen/more.css";
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:#053b06;
+}
+
+.main-screen{
+    padding:0px var(--horizontal-space);
+}
