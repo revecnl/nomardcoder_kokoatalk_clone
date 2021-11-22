@@ -1,7 +1,7 @@
 .icon-row{
     display:flex;
-    justify-content: left;
-    width: 500px;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .icon-row_icon{
