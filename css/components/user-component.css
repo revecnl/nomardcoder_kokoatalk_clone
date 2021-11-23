@@ -1,6 +1,6 @@
 .user-component{
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .user-component,
 .user-component-column:first-child {

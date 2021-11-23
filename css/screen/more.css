@@ -2,14 +2,14 @@
     margin-top:35px;
     display:flex;
     justify-content:left;
-    
+    border:1px solid red;
+    width: 100%;
 }
 
-
 .more_screen .icon-row .icon-row_icon{
-    margin-left:25px;
-    margin-right:25px;
     text-align: center;
+    padding: 0px var(--horizontal-space);
+    border:1px solid red;
 }
 
 .more-suggestions{

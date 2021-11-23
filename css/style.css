@@ -7,14 +7,18 @@
 @import "components/status_bar.css";
 @import "components/nav-bar.css";
 @import "components/screen_header.css";
+@import "components/alt-screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/icon-raw.css";
+
 /*screen*/
 @import "screen/login.css";
 @import "screen/friends.css";
 @import "screen/search.css";
 @import "screen/more.css";
+@import "screen/setting.css";
+@import "screen/chat-screen.css";
 
 body{
     font-family: 'Open Sans', sans-serif;
