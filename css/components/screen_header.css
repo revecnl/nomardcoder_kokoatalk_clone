@@ -1,0 +1,17 @@
+.screen_header{
+    display: flex;
+    justify-content: space-between;
+    padding:var(--horizontal-space);
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.screen_header_title{
+    font-size: 32px;
+    font-weight:600px;
+}
+
+.screen_header_icons span{
+    margin-left:25px;
+}

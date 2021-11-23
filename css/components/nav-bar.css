@@ -1,0 +1,49 @@
+.nav{
+    background-color: #e8f5e9;
+    padding:10px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(84, 250, 153, 0.2);
+    position:fixed;
+    bottom:0px;
+    width: 100%;
+}
+.status-bar{
+    position:fixed;
+    top:0px;
+    width: 100%;
+}
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_link{
+    color:#4caf50;
+    position: relative;
+}
+
+.nav_notification{
+    position: absolute;
+    /* position reletive를 기준으로 움직인다. */
+    left:15px;
+    bottom:15px;
+}
+
+.nav_etcdot{
+    color:tomato;
+    font-weight: 600;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left:30px;
+    bottom:20px;
+    font-size: 50%;
+}
+
+.screen_header{
+    display: flex;
+    justify-content: space-between;
+    padding:25px 30px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+   
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Welcome to Mogobaba Talk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar_colum">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+            <!--todo wifi icon-->
+        </div>
+        <div class="status-bar_colum">
+            <span>19:30</span>
+        </div>
+        <div class="status-bar_colum">
+        <span>100%</span>
+        <i class="fas fa-battery-full"></i>
+        <!--icon-->
+        <!--charging icon-->
+    </div>
+    </div>
+
+    <header class="welcome-header">
+        <img class="welcome-image" src="pic/welcome.gif">
+        <h1 class="welcome-header_title">Welcome To MogobabaTalk</h1>
+        <p class="welcome-header_text">If you have a STOVE Account, Log in with your ID & PW.</p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+        <!-- action - 어떤페이지로 data를 보낼것인지 / 
+            method - post/get 
+        post - 백엔드에 보내는 용도 
+        get - 보안에 취약함 username, password를 get으로 보내면 안됨
+        form에 사용된 정보가 url에 포함됨-->
+        <input name="username" required type="text" placeholder="Enter the STOVE ID" >
+        <input name="password" required type="password" placeholder="Password" >
+        <input type="submit" value="Log In!">
+        <a href="#">Find STOVE Account or Password</a>
+    </form>
+
+<script src="https://kit.fontawesome.com/8eeb00f901.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

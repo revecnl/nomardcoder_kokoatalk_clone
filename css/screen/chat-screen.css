@@ -1,0 +1,118 @@
+.chat-screen{
+    background-color: #e8f5e9;;
+    height: 11000vh;
+}
+
+
+.chat-screen .alt-header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #e8f5e9;
+    z-index: 1;
+    /* 레이어 개념 */
+}
+
+.chat-screen .status-bar{
+    z-index: 2;
+}
+
+.main-chat{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-timestamp{
+    color: white;
+    background-color: rgb(151, 214, 156);
+    padding:10px;
+    font-size: 15px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.messege-row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+
+}
+
+.messege-row img{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.messege-author {
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+.messege-info .message-emote{
+    width: 120px;
+    height: 120px;
+    margin-right: 5px;
+}
+
+.messege-bubble-emote{
+    background-color: white;
+    padding: 8px 13px;
+    border:none;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    /* 모서리 각지게 만들기 */
+}
+
+
+.messege-bubble{
+    background-color: white;
+    padding: 8px 13px;
+    border:none;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding:15px;
+    font-size: 18px;
+}
+
+.messege-info{
+    display: flex;
+    align-items: end;
+}
+
+.messege-author,
+.messege-time{
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.messege-row-own{
+    justify-content: flex-end;
+}
+
+.messege-row-own .messege-bubble{
+    background-color: rgb(149, 214, 154);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.messege-row-own .messege-info{
+    flex-direction: row-reverse;
+}
+
+/* 
+.messege-row-own .messege-bubble{
+    order: 1;
+}
+
+.messege-row-own .messege-time{
+    order: 0;
+}
+/* order flex-childen에만 적용되는 속성 */
