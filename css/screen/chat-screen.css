@@ -116,3 +116,66 @@
     order: 0;
 }
 /* order flex-childen에만 적용되는 속성 */
+
+.reply{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.reply .reply-column:first-child{
+    width: 10%;
+}
+
+.reply .reply-column:last-child{
+    width: 90%;
+    position: relative;
+}
+
+.reply i{
+    opacity: 0.5;
+}
+
+.reply-column button i{
+    opacity: 1;
+}
+
+.reply input{
+    padding: 14px;
+    width: 100%;
+    border:var(--main-border);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.reply-column:last-child > i,
+.reply-column:last-child button{
+    position: absolute;
+    right:10px;
+    top: 8px;
+}
+
+.reply-column:last-child > i{
+    right: 45px;
+    top: 15px;
+
+}
+
+.reply-column button{
+    background-color: rgb(176, 255, 202);
+    width: 30px;
+    height: 30px;
+    border:none;
+    border-radius: 50%;
+}
+
+.reply-column button:focus,
+.reply-column button:active{
+    outline: none;
+}
