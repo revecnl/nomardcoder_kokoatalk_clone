@@ -22,11 +22,26 @@
     position: relative;
 }
 
+
+@keyframes notificationAnimation{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+
 .nav_notification{
     position: absolute;
     /* position reletive를 기준으로 움직인다. */
     left:15px;
     bottom:15px;
+    animation: notificationAnimation 2s ease-in-out infinite;
 }
 
 .nav_etcdot{
@@ -46,4 +61,32 @@
     display: flex;
     justify-content: space-between;
     padding:25px 30px;
+}
+
+@keyframes appearBtnAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.nav_btn{
+    animation: appearBtnAnimation 0.3s ease-in-out forwards;
+    transform: translateY(80px);
+    opacity: 0;
+}
+
+.nav_btn:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+.nav_btn:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+.nav_btn:last-child{
+    animation-delay: 0.6s;
 }

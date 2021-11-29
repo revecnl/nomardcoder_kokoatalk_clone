@@ -32,3 +32,37 @@ color:rgba(0,0,0,0.5);
 .user-component-column:last-child{
     color:rgba(0,0,0,0.5);
 }
+
+
+@keyframes hidesplashscreen{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.splash-screen{
+    background-color: var(--green);
+    position: absolute;
+    height: 100vh;
+    /* 화면 크기의 100% */
+    width: 100vw;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    animation: hidesplashscreen 0.3s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.splash-icon{
+    border: none;
+    background-color: rgb(149, 214, 154);
+    border-radius: 50%;
+    width: 50%;
+}
